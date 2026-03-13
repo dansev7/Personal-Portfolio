@@ -42,7 +42,7 @@ export default function Projects() {
       image:
         "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
       technologies: ["React.js", "Express.js", "Supabase"],
-      liveDemo: "#",
+      liveDemo: "https://dradmikewmedcenter.com",
       github: "#",
     },
   ];
