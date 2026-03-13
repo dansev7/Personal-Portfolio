@@ -81,7 +81,7 @@ export default function Certifications() {
             {certifications.map((cert, index) => (
               <motion.div
                 key={cert.title}
-                className="bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+                className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-slate-200/50 dark:border-slate-700/50 hover:-translate-y-1 transition-all duration-300 group"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}

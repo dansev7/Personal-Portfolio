@@ -6,7 +6,7 @@ export default function Experience() {
     {
       title: "Freelance Full Stack Developer",
       company: "Self-Employed",
-      period: "2022 - Present",
+      period: "2020 - Present",
       responsibilities: [
         "Developed and deployed 15+ full-stack web applications using MERN stack",
         "Built cross-platform mobile applications with React Native for iOS and Android",
@@ -17,7 +17,7 @@ export default function Experience() {
     {
       title: "Web Developer Internship",
       company: "National ID Ethiopia | NID",
-      period: "2023 - 2024",
+      period: "2021 - 2022",
       responsibilities: [
         "Applied and expanded technical skills through hands-on work on impactful, real-world projects.",
         "Collaborated with experienced professionals, gaining valuable industry insights.",
@@ -50,7 +50,7 @@ export default function Experience() {
             {experiences.map((experience, index) => (
               <motion.div
                 key={experience.title}
-                className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+                className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-slate-200/50 dark:border-slate-700/50 hover:-translate-y-1 transition-all duration-300"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}

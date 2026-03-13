@@ -14,10 +14,16 @@ import {
   SiDocker,
   SiMysql,
   SiTailwindcss,
+  SiDjango,
+  SiFlutter,
+  SiCplusplus,
+  SiGitlab,
 } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
 import {
   FaCogs,
   FaTools,
+  FaJava,
 } from "react-icons/fa";
 
 export default function Skills() {
@@ -39,30 +45,33 @@ export default function Skills() {
       icon: <Server className="h-6 w-6" />,
       color: "text-green-600",
       skills: [
-        { name: ".NET Core", icon: <SiDotnet className="text-purple-600" /> },
+        { name: ".NET", icon: <SiDotnet className="text-purple-600" /> },
         { name: "Node.js", icon: <SiNodedotjs className="text-green-500" /> },
-        { name: "REST APIs", icon: <FaCogs className="text-indigo-600" /> },
-        { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> },
-        { name: "MySQL", icon: <SiMysql className="text-sky-600" /> },
+        { name: "Django", icon: <SiDjango className="text-emerald-800 dark:text-emerald-500" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800 dark:text-blue-400" /> },
+        { name: "SQL Server", icon: <FaDatabase className="text-red-600 dark:text-red-500" /> },
       ],
     },
     {
-      title: "Mobile",
+      title: "Mobile & Core",
       icon: <Smartphone className="h-6 w-6" />,
       color: "text-purple-600",
       skills: [
+        { name: "Flutter", icon: <SiFlutter className="text-cyan-500" /> },
         { name: "React Native", icon: <SiReact className="text-blue-500" /> },
-        { name: "Mobile UI/UX", icon: <Layers className="h-4 w-4 text-pink-500" /> },
+        { name: "C++", icon: <SiCplusplus className="text-blue-700 dark:text-blue-400" /> },
+        { name: "Java", icon: <FaJava className="text-orange-600 dark:text-orange-500" /> },
       ],
     },
     {
       title: "DevOps & Tools",
       icon: <FaTools className="h-6 w-6" />,
-      color: "text-yellow-600",
+      color: "text-amber-600",
       skills: [
+        { name: "GitLab", icon: <SiGitlab className="text-orange-600" /> },
         { name: "Git / GitHub", icon: <SiGit className="text-orange-500" /> },
         { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
-        { name: "Supabase", icon: <SiSupabase className="text-green-500" /> },
+        { name: "Supabase", icon: <SiSupabase className="text-emerald-500" /> },
       ],
     },
   ];
@@ -91,17 +100,17 @@ export default function Skills() {
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.title}
-                className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-slate-100 dark:border-slate-700 hover:border-indigo-500 transition-colors"
+                className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-slate-200/50 dark:border-slate-700/50 hover:border-indigo-500/50 dark:hover:border-indigo-400/50 hover:-translate-y-1 transition-all duration-300 group"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
                 viewport={{ once: true }}
               >
                 <div className="flex items-center mb-6">
-                  <div className={`mr-3 p-2 bg-slate-50 dark:bg-slate-900 rounded-lg ${category.color}`}>
+                  <div className={`mr-4 p-3 bg-slate-50 dark:bg-slate-900/80 rounded-xl shadow-sm decoration-clone group-hover:scale-110 transition-transform ${category.color}`}>
                     {category.icon}
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white">
                     {category.title}
                   </h3>
                 </div>

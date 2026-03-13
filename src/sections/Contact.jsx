@@ -101,7 +101,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <motion.div
-            className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-md"
+            className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-slate-200/50 dark:border-slate-700/50"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}

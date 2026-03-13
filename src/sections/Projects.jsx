@@ -2,7 +2,9 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
 import { ExternalLink, Github } from "lucide-react";
-
+import CardOrder from '../assets/CardPrint.png';
+import DrAdmikew from '../assets/DrAdmikew.png';
+import ResidentPortal from '../assets/ResidentPortal.png';
 export default function Projects() {
   const projects = [
     {
@@ -10,7 +12,7 @@ export default function Projects() {
       description:
         "Engineered the entire backend for the National ID Program's card ordering system. Integrated with EthioPost and Chapa payment gateway to serve 35M+ users nationwide.",
       image:
-        "https://images.unsplash.com/photo-1557124816-e9b7d5440de2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
+        CardOrder,
       technologies: ["Node.js", "Express.js", "React.js", "PostgreSQL", "Chapa", "PostGIS"],
       liveDemo: "https://card-order.fayda.et/",
       github: "#", // Add GitHub link if public
@@ -20,9 +22,19 @@ export default function Projects() {
       description:
         "Developed a secure portal allowing over 35 million citizens to update demographic data and manage personal Fayda ID information in real-time.",
       image:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
+        ResidentPortal,
       technologies: ["Node.js", "React.js", "PostgreSQL", "Scalable Architecture"],
       liveDemo: "https://resident.fayda.et/",
+      github: "#",
+    },
+    {
+      name: "Dr. Admikew Medical Center",
+      description:
+      "A comprehensive medical center management system with patient records, appointment scheduling, and doctor-patient communication features.",
+      image:
+      DrAdmikew,
+      technologies: ["React.js", "Express.js", "Supabase"],
+      liveDemo: "https://dradmikewmedcenter.com",
       github: "#",
     },
     {
@@ -33,16 +45,6 @@ export default function Projects() {
         "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
       technologies: ["React Native", "Express.js", "PostgreSQL", "Chapa"],
       liveDemo: "#",
-      github: "#",
-    },
-    {
-      name: "Dr. Admikew Medical Center",
-      description:
-        "A comprehensive medical center management system with patient records, appointment scheduling, and doctor-patient communication features.",
-      image:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
-      technologies: ["React.js", "Express.js", "Supabase"],
-      liveDemo: "https://dradmikewmedcenter.com",
       github: "#",
     },
   ];
@@ -84,7 +86,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={project.name}
-              className="bg-slate-50 dark:bg-slate-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group border border-slate-100 dark:border-slate-700"
+              className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:shadow-xl transition-all duration-300 group border border-slate-200/50 dark:border-slate-700/50 hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}

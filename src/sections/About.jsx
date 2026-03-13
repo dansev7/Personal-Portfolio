@@ -30,21 +30,21 @@ export default function About() {
               viewport={{ once: true }}
             >
               <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                Full-stack developer with **6+ years of experience** specializing in high-performance application development. My expertise spans the entire software lifecycle, from architecting scalable back-ends with **.NET Core** and **Node.js** to crafting seamless mobile experiences using **React Native**.
+                Full-stack developer with 6+ years of experience specializing in high-performance application development. My expertise spans the entire software lifecycle, from architecting scalable back-ends with .NET, Node.js, Django, and SQL Server to crafting seamless mobile experiences using Flutter and React Native.
               </p>
 
               <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                With a strong foundation in **Computer Science**, I focus on building robust systems that balance technical complexity with intuitive user interfaces. I am committed to clean code principles and stay aligned with modern industry standards in **React.js** and cloud-native environments.
+                With a strong foundation in Computer Science using core languages like C++ and JAVA, I focus on building robust systems that balance technical complexity with intuitive user interfaces. I am highly proficient in modern stacks like MERN and PERN, and utilize tools like GitLab to ensure continuous integration and clean code principles.
               </p>
 
               <div className="grid grid-cols-2 gap-6 pt-6">
-                <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
-                  <div className="text-2xl font-bold text-indigo-600">6+ Years</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-300">Development Exp.</div>
+                <div className="text-center p-4 bg-white/60 dark:bg-slate-800/60 backdrop-blur-md rounded-2xl border border-slate-200/50 dark:border-slate-700/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)]">
+                  <div className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">6+ Years</div>
+                  <div className="text-sm font-medium text-slate-600 dark:text-slate-300 mt-1">Development Exp.</div>
                 </div>
-                <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
-                  <div className="text-2xl font-bold text-green-600">Advanced</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-300">English Proficiency</div>
+                <div className="text-center p-4 bg-white/60 dark:bg-slate-800/60 backdrop-blur-md rounded-2xl border border-slate-200/50 dark:border-slate-700/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)]">
+                  <div className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Advanced</div>
+                  <div className="text-sm font-medium text-slate-600 dark:text-slate-300 mt-1">English Proficiency</div>
                 </div>
               </div>
             </motion.div>
@@ -58,25 +58,25 @@ export default function About() {
               viewport={{ once: true }}
             >
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-                  <Smartphone className="h-8 w-8 text-indigo-600 mb-3" />
+                <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-slate-200/50 dark:border-slate-700/50 hover:-translate-y-1 transition-transform cursor-default">
+                  <Smartphone className="h-8 w-8 text-indigo-600 dark:text-indigo-400 mb-3" />
                   <h4 className="font-bold text-slate-900 dark:text-white">Mobile</h4>
-                  <p className="text-sm text-slate-500">React Native Expert</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">Flutter & Native</p>
                 </div>
-                <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-                  <Shield className="h-8 w-8 text-blue-600 mb-3" />
+                <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-slate-200/50 dark:border-slate-700/50 hover:-translate-y-1 transition-transform cursor-default">
+                  <Shield className="h-8 w-8 text-blue-600 dark:text-blue-400 mb-3" />
                   <h4 className="font-bold text-slate-900 dark:text-white">Back-end</h4>
-                  <p className="text-sm text-slate-500">.NET Core & Node.js</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">.NET, Node, Django</p>
                 </div>
-                <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-                  <Code className="h-8 w-8 text-purple-600 mb-3" />
+                <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-slate-200/50 dark:border-slate-700/50 hover:-translate-y-1 transition-transform cursor-default">
+                  <Code className="h-8 w-8 text-purple-600 dark:text-purple-400 mb-3" />
                   <h4 className="font-bold text-slate-900 dark:text-white">Front-end</h4>
-                  <p className="text-sm text-slate-500">React.js Specialist</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">React Specialist</p>
                 </div>
-                <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-                  <Globe className="h-8 w-8 text-green-600 mb-3" />
+                <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-slate-200/50 dark:border-slate-700/50 hover:-translate-y-1 transition-transform cursor-default">
+                  <Globe className="h-8 w-8 text-emerald-600 dark:text-emerald-400 mb-3" />
                   <h4 className="font-bold text-slate-900 dark:text-white">Global</h4>
-                  <p className="text-sm text-slate-500">Remote Collaboration</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">Remote Collaboration</p>
                 </div>
               </div>
             </motion.div>
