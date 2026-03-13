@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Code, Users, Rocket } from "lucide-react";
+import { Code, Globe, Shield, Smartphone } from "lucide-react";
 
 export default function About() {
   return (
@@ -15,13 +15,13 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-slate-900 dark:text-white">
-              About Me
+              Professional Profile
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto" />
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content */}
+            {/* Technical Narrative */}
             <motion.div
               className="space-y-6"
               initial={{ opacity: 0, x: -30 }}
@@ -30,26 +30,26 @@ export default function About() {
               viewport={{ once: true }}
             >
               <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                With a passion for creating robust and scalable applications, I specialize in full-stack development using the MERN stack and React Native for mobile solutions. My journey in software development has been driven by curiosity and a commitment to solving real-world problems through technology.
+                Full-stack developer with **6+ years of experience** specializing in high-performance application development. My expertise spans the entire software lifecycle, from architecting scalable back-ends with **.NET Core** and **Node.js** to crafting seamless mobile experiences using **React Native**.
               </p>
 
               <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                I believe in writing clean, maintainable code and delivering projects that exceed expectations. My approach combines technical expertise with strong communication skills, enabling me to work effectively in team environments and adapt quickly to new challenges and technologies.
+                With a strong foundation in **Computer Science**, I focus on building robust systems that balance technical complexity with intuitive user interfaces. I am committed to clean code principles and stay aligned with modern industry standards in **React.js** and cloud-native environments.
               </p>
 
               <div className="grid grid-cols-2 gap-6 pt-6">
-                <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-lg">
-                  <div className="text-2xl font-bold text-indigo-600">15+</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-300">Projects Completed</div>
+                <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
+                  <div className="text-2xl font-bold text-indigo-600">6+ Years</div>
+                  <div className="text-sm text-slate-600 dark:text-slate-300">Development Exp.</div>
                 </div>
-                <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-lg">
-                  <div className="text-2xl font-bold text-green-600">3+</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-300">Years Experience</div>
+                <div className="text-center p-4 bg-slate-50 dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
+                  <div className="text-2xl font-bold text-green-600">Advanced</div>
+                  <div className="text-sm text-slate-600 dark:text-slate-300">English Proficiency</div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Image + Icons */}
+            {/* Tech Stack Visuals */}
             <motion.div
               className="space-y-4"
               initial={{ opacity: 0, x: 30 }}
@@ -57,24 +57,26 @@ export default function About() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
-                alt="Modern developer workspace"
-                className="w-full h-64 object-cover rounded-xl shadow-lg"
-              />
-
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-indigo-600/10 p-4 rounded-lg text-center">
-                  <Code className="h-8 w-8 text-indigo-600 mx-auto mb-2" />
-                  <div className="text-sm font-medium text-slate-700 dark:text-slate-300">Clean Code</div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                  <Smartphone className="h-8 w-8 text-indigo-600 mb-3" />
+                  <h4 className="font-bold text-slate-900 dark:text-white">Mobile</h4>
+                  <p className="text-sm text-slate-500">React Native Expert</p>
                 </div>
-                <div className="bg-green-600/10 p-4 rounded-lg text-center">
-                  <Users className="h-8 w-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-sm font-medium text-slate-700 dark:text-slate-300">Teamwork</div>
+                <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                  <Shield className="h-8 w-8 text-blue-600 mb-3" />
+                  <h4 className="font-bold text-slate-900 dark:text-white">Back-end</h4>
+                  <p className="text-sm text-slate-500">.NET Core & Node.js</p>
                 </div>
-                <div className="bg-purple-600/10 p-4 rounded-lg text-center">
-                  <Rocket className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-                  <div className="text-sm font-medium text-slate-700 dark:text-slate-300">Innovation</div>
+                <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                  <Code className="h-8 w-8 text-purple-600 mb-3" />
+                  <h4 className="font-bold text-slate-900 dark:text-white">Front-end</h4>
+                  <p className="text-sm text-slate-500">React.js Specialist</p>
+                </div>
+                <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                  <Globe className="h-8 w-8 text-green-600 mb-3" />
+                  <h4 className="font-bold text-slate-900 dark:text-white">Global</h4>
+                  <p className="text-sm text-slate-500">Remote Collaboration</p>
                 </div>
               </div>
             </motion.div>
